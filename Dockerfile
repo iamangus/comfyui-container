@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 COPY entrypoint.sh /usr/bin/entrypoint.sh
 
 RUN apt-get update -y && \
-	apt-get install -y aria2 libgl1 libglib2.0-0 wget git git-lfs  python3.12 python3-venv python3-pip python-is-python3 && \
+	apt-get install -y aria2 libgl1 libglib2.0-0 wget git git-lfs  python3 python3-venv python3-pip python-is-python3 && \
 	adduser --disabled-password --uid 568 --group --system --gecos '' user && \
 	mkdir /data && \
 	chown -R user:user /data && \
