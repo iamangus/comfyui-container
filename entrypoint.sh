@@ -5,7 +5,7 @@ if [ ! -d "/data/comfyui/models" ]; then
     cd /data/comfyui
     #cp settings-no-refiner.json settings.json
     git reset --hard
-    python3.12 -m venv .venv
+    python3 -m venv .venv
     source .venv/bin/activate
     pip install packaging==23.1 pygit2==1.12.2
     pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu126
