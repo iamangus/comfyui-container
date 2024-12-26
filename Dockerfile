@@ -11,7 +11,6 @@ RUN apt-get update -y && \
 	chown user:user /usr/bin/entrypoint.sh && \
 	chmod  +x /usr/bin/entrypoint.sh
 
-
 WORKDIR /data
 USER user
 
