@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ ! -d "/data/comfyui/models" ]; then
     echo "Installing..."
-    git clone https://github.com/ai-dock/comfyui.git /data/comfyui
+    git clone https://github.com/comfyanonymous/ComfyUI /data/comfyui
     cd /data/comfyui
     #cp settings-no-refiner.json settings.json
     git reset --hard
